@@ -1,6 +1,6 @@
 ﻿namespace IntStringComparison;
 
-public class RandomDictionary<K, V> {
+public class RandomDictionary<K, V> where K : notnull {
 	private readonly List<K> _keys = [];
 
 	private readonly Dictionary<K, V> _dictionary = new();
